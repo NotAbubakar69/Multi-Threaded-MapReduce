@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Page-1" id="Ix5d7HUJn_iL3qdyL9j_">
+    <mxGraphModel dx="1360" dy="759" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-1" value="Start" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="378" y="270" width="94" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-2" value="Parse Input String into Words" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="316" y="367" width="218" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-3" value="Initialize Map Phase Threads" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="482" width="203" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-4" value="For each word create Key-Value Pair" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="596" width="211" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-5" value="Store Key-Value Pairs in Map Output" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="309" y="711" width="233" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-6" value="Shuffle Phase: Group by Key with Mutexes" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="308" y="825" width="234" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-7" value="Reduce Phase: Sum Values by Key" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="296" y="940" width="259" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-8" value="Output Final Reduced Results" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="318" y="1055" width="216" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-9" value="End" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="381" y="1169" width="88" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-1" target="RDzNWtZP_fYt0eM9df9J-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-2" target="RDzNWtZP_fYt0eM9df9J-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-3" target="RDzNWtZP_fYt0eM9df9J-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-4" target="RDzNWtZP_fYt0eM9df9J-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-5" target="RDzNWtZP_fYt0eM9df9J-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-6" target="RDzNWtZP_fYt0eM9df9J-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-7" target="RDzNWtZP_fYt0eM9df9J-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDzNWtZP_fYt0eM9df9J-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.51;entryY=0;rounded=0;" edge="1" parent="1" source="RDzNWtZP_fYt0eM9df9J-8" target="RDzNWtZP_fYt0eM9df9J-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
